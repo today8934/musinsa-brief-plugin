@@ -1,0 +1,16 @@
+{
+  "name": "musinsa-brief-plugin",
+  "version": "0.1.0",
+  "description": "무신사 자사·경쟁사·입점 브랜드·규제·인사·업계 트렌드를 7개 카테고리로 병렬 수집해 Obsidian vault에 한국어 마크다운 보고서를 저장하고, 채팅엔 경로+TL;DR+신호 카드만 짧게 보고합니다. 일간 + 주간/월간 digest 두 skill 제공, since_last_report 모드로 변화 단위 자동 분기.",
+  "author": {
+    "name": "류욱상",
+    "email": "wooksang.ryu@musinsa.com",
+    "url": "https://github.com/today8934"
+  },
+  "license": "MIT",
+  "keywords": [
+    "musinsa", "fashion", "retail", "k-fashion",
+    "news-brief", "korean", "tavily", "mcp",
+    "weekly-digest", "category-matrix", "obsidian"
+  ]
+}
