@@ -43,7 +43,7 @@ description: musinsa-brief가 vault에 누적한 일간 보고서들을 주간 �
 
 ### Step 2 — 출력 경로 결정 + vault 스캔
 
-1. `~/.claude/data/musinsa-brief/config.json`의 `output_dir` 확인 → 없으면 default `~/Documents/obsidian/musinsa-brief/`
+1. `~/.claude/data/musinsa-brief/config.json`의 `output_dir` 확인 → 없으면 default `~/workspace/wooksang-marketplace-documents/musinsa-brief/`
 2. 디렉토리 스캔으로 `YYYY-MM-DD*.md` 파일 목록 수집 (digest-*.md 제외)
 3. 파일명에서 추출한 날짜가 `since_date ~ until_date` 범위 내인 것만 선택
 

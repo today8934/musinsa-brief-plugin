@@ -24,17 +24,19 @@ description: 무신사 자사·경쟁사·입점·규제·인사·트렌드 7개
 
 ## 출력 위치
 
-기본 경로: `~/Documents/obsidian/musinsa-brief/{YYYY-MM-DD}.md`.
+기본 경로: `~/workspace/wooksang-marketplace-documents/musinsa-brief/{YYYY-MM-DD}.md`.
+
+wooksang-marketplace 플러그인들이 생성한 모든 문서는 `~/workspace/wooksang-marketplace-documents/<plugin>/` 하위로 모입니다. 이 skill은 `musinsa-brief` 디렉토리를 사용합니다.
 
 ### 경로 결정 절차
-1. `~/.claude/data/musinsa-brief/config.json`이 있고 `output_dir` 필드가 존재 → 우선 사용
-2. 없으면 default `~/Documents/obsidian/musinsa-brief/`
+1. `~/.claude/data/musinsa-brief/config.json`이 있고 `output_dir` 필드가 존재 → 우선 사용 (사용자가 명시적으로 Obsidian vault 등 별도 위치를 원하는 경우만)
+2. 없으면 default `~/workspace/wooksang-marketplace-documents/musinsa-brief/`
 3. 디렉토리 없으면 `mkdir -p`. **default를 처음 사용한 경우(config.json 없음 + 디렉토리 신규 생성)** Step 8 채팅 보고에 안내 1줄 추가:
-   `"💡 보고서를 ~/Documents/obsidian/musinsa-brief/에 저장했어요. Obsidian vault 경로가 다르면 ~/.claude/data/musinsa-brief/config.json 생성 후 {"output_dir": "<경로>"} 작성하세요."`
+   `"💡 보고서를 ~/workspace/wooksang-marketplace-documents/musinsa-brief/에 저장했어요. 다른 위치(예: Obsidian vault)에 저장하려면 ~/.claude/data/musinsa-brief/config.json 생성 후 {"output_dir": "<경로>"} 작성하세요."`
    1회 노출 후 `~/.claude/data/musinsa-brief/.welcomed` 빈 파일 touch해 재노출 방지
 4. 같은 날짜 파일 존재 시 `{YYYY-MM-DD}-{HHMM}.md` 시간 suffix (refresh mode 자연스럽게 작동)
 
-### config.json 예시
+### config.json 예시 (선택적 오버라이드)
 ```json
 {
   "output_dir": "~/Documents/obsidian/Musinsa Vault/02-Briefs/musinsa"

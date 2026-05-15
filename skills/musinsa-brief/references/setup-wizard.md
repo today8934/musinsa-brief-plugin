@@ -56,7 +56,7 @@
 §9.1 결정 절차 3단계: config.json 없음 + default 디렉토리 신규 생성 시 채팅 보고에 1회 한정 추가:
 
 ```
-💡 보고서를 ~/Documents/obsidian/musinsa-brief/에 저장했어요. Obsidian vault 경로가 다르면 ~/.claude/data/musinsa-brief/config.json 생성 후 {"output_dir": "<경로>"} 작성하세요. 이 안내는 첫 호출에만 노출됩니다.
+💡 보고서를 ~/workspace/wooksang-marketplace-documents/musinsa-brief/에 저장했어요. 다른 위치(예: Obsidian vault)에 저장하려면 ~/.claude/data/musinsa-brief/config.json 생성 후 {"output_dir": "<경로>"} 작성하세요. 이 안내는 첫 호출에만 노출됩니다.
 ```
 
 표시 후 `~/.claude/data/musinsa-brief/.welcomed` 빈 파일 touch해 재노출 방지.

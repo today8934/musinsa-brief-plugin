@@ -49,7 +49,7 @@ Claude Code 재시작.
 
 자동으로 preflight → 7 카테고리 병렬 수집 → vault에 보고서 저장 → 채팅에 경로 + TL;DR + 신호 카드 보고.
 
-기본 저장 경로: `~/Documents/obsidian/musinsa-brief/{YYYY-MM-DD}.md`. vault 경로가 다르면 `~/.claude/data/musinsa-brief/config.json`에 `{"output_dir": "<경로>"}` 작성.
+기본 저장 경로: `~/workspace/wooksang-marketplace-documents/musinsa-brief/{YYYY-MM-DD}.md`. 다른 위치(예: Obsidian vault)에 저장하려면 `~/.claude/data/musinsa-brief/config.json`에 `{"output_dir": "<경로>"}` 작성.
 
 ## 🎯 사용법
 
